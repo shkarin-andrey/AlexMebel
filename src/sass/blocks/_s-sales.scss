@@ -1,0 +1,134 @@
+.s-sales {
+    padding: 156px 0 90px 0;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cards {
+        margin-top: 40px;
+    }
+
+    &__card {
+        padding: 27px 20px;
+        border: 1px solid rgba($gray, .5);
+        border-radius: 4px;
+        position: relative;
+
+        &__baner {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            padding: 7px 20px;
+            background: #6C0BF4;
+            border-radius: 0px 4px 4px 0px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &-img {
+            width: 100%;   
+            height: 256px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            margin-top: 22px;
+
+            &-title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            &-descr {
+                line-height: 120%;
+                color: $gray;
+                margin-top: 10px;
+            }
+        
+            &-price {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                margin-top: 24px;
+                display: flex;
+                gap: 12px;
+
+                span {
+                    font-size: 16px;
+                    text-decoration-line: line-through;
+                    color: $gray;
+                    font-weight: 700;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-top: 16px; 
+
+                span {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .owl-carousel {
+        position: relative;
+        margin-top: 40px;
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            transform: translateY(-50%);
+            width: 110%;
+            display: flex;
+            justify-content: space-between;
+
+            .owl-prev, .owl-next {
+                height: 50px;
+                width: 50px;
+                border-radius: 100%;
+                background-color: $gray;
+            }
+        }
+    
+        .owl-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+    
+            .owl-dot {
+                border: 1px solid $gray;
+                height: 8px;
+                width: 8px;
+                border-radius: 100%;
+                background-color: $gray;
+    
+                &.active {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}

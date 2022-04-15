@@ -1,0 +1,22 @@
+.btn {
+    padding: 17px 46px;
+    background: $orange;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: $white;
+
+    &-link {
+        background: $white;
+        color: $orange;
+        border: 1px solid $orange;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
